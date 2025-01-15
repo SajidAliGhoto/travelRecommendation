@@ -27,7 +27,9 @@
 
 
   <nav class="navbar">
+
     <div class="nav-container">
+
       <div class="btn-group">
         <img id="brand-logo" src="img/logo.png" alt="logo">
         <pre class="brand-name">Travel Bloom</pre>
@@ -35,9 +37,9 @@
 
       <div class="btn-group">
 
-        <a class="nav-link" id="home">Home</a>
-        <a class="nav-link" id="contact">Contact Us</a>
-        <a class="nav-link" id="about">About Us</a>
+        <a class="nav-link" id="home" href="travel_Recommendation.html">Home</a>
+        <a class="nav-link" id="contact" href="Contact us.html">Contact Us</a>
+        <a class="nav-link" id="about" href="About us.html">About Us</a>
 
       </div>
 
@@ -46,25 +48,44 @@
         <input id="search-text" type="text" placeholder="Enter a destination or keyword"></input>
 
         <div class="btn-group">
-          <button id="search-btn" class="btn">Search</button>
+          <button id="search-btn" class="btn" onclick="">Search</button>
           <button id="reset-btn" class="btn">Reset</button>
         </div>
       </div>
 
     </div>
+
   </nav>
 
-  <section class="hero-section">
-    <div class="hero-contents">
+  <section class="Recommendations-section">
+    <div id="recommendations">
 
-      <h1 class="Primary-header">
-        🌍 Your Gateway to Extraordinary Destinations
-      </h1>
-      <h2 class="hero-description">
-        Discover the world’s best-kept secrets and must-visit spots—tailored to your dream destination.
-      </h2>
-      <button class="btn-hero btn">Book Now</button>
     </div>
+  </section>
+
+  <section class="contact-section">
+
+
+   <div class="contact-container">
+
+     <div class="contact-page-heading">
+        <h1>Contact Us</h1>
+     </div>
+
+     <div class="contact-form-wrapper">
+         <form name="contact-form" class="contact-form">
+           <label for="name">Name</label>
+           <input class="form-input" id="name" type="text" placeholder="Name">
+           <label for="email">Email</label>
+           <input class="form-input" id="email" type="email" placeholder="email">
+           <label for="form-message">Message</label>
+           <input class="form-input" type="text" id="form-message" placeholder="Write your message here">
+           <button  type="submit" class="btn-form btn">Submit</button>
+         </form>
+     </div>
+
+   </div>
+
     <img class="hero-bg" src="/img/hero-bg.jpg" alt="bg">
   </section>
 

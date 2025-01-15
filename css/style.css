@@ -3,6 +3,10 @@ body{
   color: white;
 
 }
+a{
+  text-decoration: none;
+  color: white;
+}
 h1{
   font-family: sans-serif;
   color: white;
@@ -37,7 +41,7 @@ h1{
     backdrop-filter: blur(10px); /* Creates the glassy blur effect */
     -webkit-backdrop-filter: blur(10px); /* For Safari support */
     border: 1px solid rgba(255, 255, 255, 0.3); /* Optional: Subtle border */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Adds a shadow for depth */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 
   z-index: 2;
 
@@ -113,7 +117,7 @@ h1{
 
 }
 .hero-contents {
-  width: 60%;
+  max-width: 50%;
   height: 110vh;
   display: flex;
   flex-direction: column;
@@ -187,7 +191,6 @@ h1{
   width: 200px;
   height: 200px;
   border-radius: 20px;
-  max-width: 10rem;
 }
 
 .contact-logo{
@@ -201,6 +204,7 @@ h1{
 .tm-details-wrapper{
   position: relative;
   left: 50px;
+  max-width: 10rem;
 }
 
 .tm-member-title{
@@ -211,3 +215,98 @@ h1{
   padding: 5px;
 }
 /*<-- Contact us section-->*/
+.contact-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+.contact-container{
+  width: 100%;
+  gap: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+
+}
+.contact-form-wrapper{
+  width: 20rem;
+  height: 20rem;
+  background: rgba(5, 0, 0, 0.5);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contact-form{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  text-align: left;
+}
+.form-input{
+  all:unset;
+  background: none;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.btn-form{
+  width: 100px;
+  height: 40px;
+}
+
+input:focus,
+input:active {
+  outline: none; /* Prevents default focus outline */
+  border: 1px solid white; /* Prevents default border from appearing */
+}
+
+/*--Responsiveness*/
+
+@media (max-width: 715px) {
+  .nav-link{
+    display: none;
+  }
+  .search-bar-container{
+    display: none;
+  }
+}
+/*-------------
+*/
+.Recommendations-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: max-content;
+  height: max-content;
+  column-gap: 1rem;
+  z-index: 10;
+  position: absolute;
+  right: 0;
+  top: 4rem;
+  border: 1px solid white;
+}
+.recommendation-card {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  max-width: 300px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5);
+}
+.recommendation-card img {
+  width: 100%;
+  border-radius: 5px;
+}
